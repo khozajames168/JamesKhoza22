@@ -1,25 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arise and Shine Tutors | Maths & Science Tutoring</title>
+  <meta name="description" content="Affordable Maths and Science tutoring for GET and FET learners in Burgersfort. From R350 per month." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #F9FAFB;
+      color: #1F2933;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0F2A44;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .hero {
       text-align: center;
       padding: 80px 20px;
-      background: linear-gradient(to bottom, #667eea, #764ba2);
-      color: white;
-      margin: 0;
     }
-    h1 { font-size: 3em; }
-    p { font-size: 1.5em; }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #2E8B57;
+      color: white;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    section {
+      margin-top: 60px;
+    }
+
+    h2.section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .feature-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .subjects ul {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .subjects li {
+      background: white;
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    .fees {
+      background: #0F2A44;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .fees h2 {
+      margin-bottom: 15px;
+    }
+
+    .fees p {
+      font-size: 1.2rem;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      background: #111827;
+      color: #9CA3AF;
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <p>This is my real website running on the internet!</p>
-  <p>Made by YOUR NAME ❤️</p>
+
+<header>
+  <div class="container">
+    <nav>
+      <h2>Arise & Shine Tutors</h2>
+      <div>
+        <a href="#about">About</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Quality Maths & Science Tutoring for GET & FET Learners</h1>
+    <p>We help learners build confidence, strong understanding, and improved academic results through structured and affordable tutoring.</p>
+    <a href="#contact" class="btn">Enroll Your Child</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">Why Arise and Shine Tutors?</h2>
+    <div class="features">
+      <div class="feature-box">Experienced and committed tutors</div>
+      <div class="feature-box">Affordable monthly fees</div>
+      <div class="feature-box">Small group focused attention</div>
+      <div class="feature-box">Strong foundation & exam preparation</div>
+    </div>
+  </div>
+</section>
+
+<section id="subjects" class="subjects">
+  <div class="container">
+    <h2 class="section-title">Subjects & Grades Offered</h2>
+    <ul>
+      <li>Mathematics – Grade 4 to Grade 12</li>
+      <li>Physical Sciences – Grade 10 to Grade 12</li>
+      <li>Homework assistance and exam preparation</li>
+    </ul>
+  </div>
+</section>
+
+<section class="fees">
+  <div class="container">
+    <h2>Affordable Fees</h2>
+    <p>From <strong>R350 per month</strong></p>
+    <p>Quality education made accessible for every family.</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Get in Touch</h2>
+    <p>📍 Burgersfort</p>
+    <p>📞 Call / WhatsApp: <strong>071 328 6497</strong></p>
+    <p>📧 Email: <strong>aas.tutors@gmail.com</strong></p>
+    <a href="https://wa.me/27713286497" class="btn">WhatsApp Us</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Arise and Shine Tutors. All rights reserved.</p>
+</footer>
+
 </body>
 </html>

@@ -259,3 +259,134 @@
 
 </body>
 </html>
+
+<!-- ========================= -->
+<!-- ENROLL PAGE (enroll.html) -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enroll | Arise and Shine Tutors</title>
+  <meta name="description" content="Enroll for specialised Mathematics tutoring for Grades 8–12." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Memberstack -->
+  <!-- Replace YOUR_MEMBERSTACK_ID with your real Memberstack ID -->
+  <script src="https://api.memberstack.io/static/memberstack.js?custom" data-memberstack-id="YOUR_MEMBERSTACK_ID"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #F9FAFB;
+      color: #1F2933;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    p.subtitle {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #4B5563;
+    }
+
+    form {
+      background: white;
+      padding: 40px 35px;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 22px;
+      border-radius: 8px;
+      border: 1px solid #D1D5DB;
+      font-size: 0.95rem;
+    }
+
+    button {
+      width: 100%;
+      background: #2E8B57;
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .note {
+      margin-top: 25px;
+      font-size: 0.9rem;
+      color: #6B7280;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Enroll for Mathematics Tutoring</h1>
+    <p class="subtitle">Grades 8–12 | One Monthly Fee | Full Resource Access</p>
+
+    <!-- MEMBERSTACK SIGNUP FORM -->
+    <form data-ms-form="signup">
+      <label>Parent / Guardian Full Name</label>
+      <input type="text" name="parent_name" required />
+
+      <label>Learner Full Name</label>
+      <input type="text" name="learner_name" required />
+
+      <label>Grade</label>
+      <select name="grade" required>
+        <option value="">Select Grade</option>
+        <option>Grade 8</option>
+        <option>Grade 9</option>
+        <option>Grade 10</option>
+        <option>Grade 11</option>
+        <option>Grade 12</option>
+      </select>
+
+      <label>Email Address</label>
+      <input type="email" name="email" required />
+
+      <label>Phone Number</label>
+      <input type="tel" name="phone" required />
+
+      <!-- Memberstack email + password fields -->
+      <label>Create Password</label>
+      <input type="password" data-ms-member="password" required />
+
+      <button type="submit">Proceed to Payment</button>
+    </form>
+
+    <p class="note">
+      After payment confirmation, learners receive immediate access to Mathematics resources, past papers, and downloads.
+    </p>
+  </div>
+
+</body>
+</html>
+

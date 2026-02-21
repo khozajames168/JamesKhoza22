@@ -3,29 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arise and Shine Tutors | Mathematics Grades 8–12</title>
-  <meta name="description" content="Specialised Mathematics tutoring for Grades 8–12. Affordable, structured, and results-focused support in Burgersfort." />
+  <title>Arise & Shine Tutors (Pty) Ltd | Mathematics & Physical Sciences Grades 8–12</title>
+  <meta name="description" content="Academic Excellence in Mathematics and Physical Sciences for Grades 8–12. Physical classes in Burgersfort and Online via Teams." />
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #F9FAFB;
-      color: #1F2933;
-      line-height: 1.6;
+      background-color: #F4F6F9;
+      color: #1E293B;
+      line-height: 1.7;
     }
 
     header {
-      background: linear-gradient(135deg, #0F2A44, #163A5F);
+      background: linear-gradient(135deg, #0B1F3A, #142E54);
       color: white;
-      padding: 20px 0 60px 0;
+      padding: 20px 0 100px 0;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1150px;
       margin: auto;
       padding: 0 20px;
     }
@@ -38,130 +37,98 @@
 
     nav h2 {
       margin: 0;
-      font-size: 1.4rem;
+      font-family: 'Playfair Display', serif;
       font-weight: 700;
+      letter-spacing: 1px;
     }
 
     nav a {
-      color: white;
+      color: #E5E7EB;
       text-decoration: none;
-      margin-left: 20px;
+      margin-left: 25px;
       font-weight: 500;
+      font-size: 0.95rem;
     }
 
     .hero {
       text-align: center;
-      margin-top: 60px;
+      margin-top: 90px;
     }
 
     .hero h1 {
-      font-size: 2.8rem;
-      margin-bottom: 15px;
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 20px;
     }
 
     .hero p {
       font-size: 1.15rem;
-      max-width: 720px;
+      max-width: 750px;
       margin: auto;
-      margin-bottom: 35px;
-      color: #E5E7EB;
+      color: #D1D5DB;
+      margin-bottom: 40px;
     }
 
     .btn {
-      background: #2E8B57;
-      color: white;
-      padding: 14px 32px;
-      border: none;
+      background: #C9A227;
+      color: #0B1F3A;
+      padding: 14px 34px;
       border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
+      font-weight: 700;
       text-decoration: none;
-      font-weight: 600;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #b8911f;
     }
 
     section {
-      margin-top: 80px;
+      margin-top: 90px;
     }
 
     h2.section-title {
       text-align: center;
-      font-size: 2.1rem;
-      margin-bottom: 40px;
+      font-size: 2.3rem;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 50px;
     }
 
-    .features {
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 30px;
     }
 
-    .feature-box {
+    .card {
       background: white;
-      padding: 35px 30px;
+      padding: 40px 30px;
       border-radius: 14px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.05);
       text-align: center;
-      font-weight: 500;
-    }
-
-    .grades ul {
-      list-style: none;
-      padding: 0;
-      max-width: 650px;
-      margin: auto;
-    }
-
-    .grades li {
-      background: white;
-      padding: 18px 22px;
-      margin-bottom: 14px;
-      border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-      font-weight: 500;
-    }
-
-    .resources {
-      background: #FFFFFF;
-      border-radius: 16px;
-      padding: 60px 30px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
-    }
-
-    .resources p {
-      max-width: 750px;
-      margin: auto;
-      text-align: center;
-      font-size: 1.05rem;
     }
 
     .fees {
-      background: linear-gradient(135deg, #0F2A44, #111827);
+      background: #0B1F3A;
       color: white;
       padding: 70px 20px;
-      text-align: center;
       border-radius: 18px;
-    }
-
-    .fees p {
-      font-size: 1.25rem;
-    }
-
-    .contact {
       text-align: center;
     }
 
     footer {
-      background: #0B1220;
+      background: #0A1426;
       color: #9CA3AF;
-      padding: 35px 20px;
       text-align: center;
-      margin-top: 80px;
-      font-size: 0.95rem;
+      padding: 40px 20px;
+      margin-top: 90px;
+      font-size: 0.9rem;
     }
 
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 2.1rem;
+    @media(max-width:600px){
+      .hero h1{
+        font-size: 2.2rem;
       }
     }
   </style>
@@ -171,223 +138,64 @@
 <header>
   <div class="container">
     <nav>
-      <h2>Arise & Shine Tutors</h2>
+      <h2>ARISE & SHINE TUTORS</h2>
       <div>
-        <a href="#about">About</a>
-        <a href="#grades">Grades</a>
+        <a href="#programme">Programme</a>
         <a href="#resources">Resources</a>
-        <a href="#contact">Contact</a>
+        <a href="#fees">Fees</a>
+        <a href="enroll.html">Enroll</a>
       </div>
     </nav>
 
     <div class="hero">
-      <h1>Specialised Mathematics Tutoring for Grades 8–12</h1>
-      <p>We help high school learners master Mathematics through structured lessons, consistent practice, and exam-focused support.</p>
-      <a href="#contact" class="btn">Enroll Now</a>
+      <h1>Academic Excellence in Mathematics & Physical Sciences</h1>
+      <p>
+        Structured tutoring for Grades 8–12. Physical classes in Burgersfort and Online support via Microsoft Teams & WhatsApp.
+      </p>
+      <a href="enroll.html" class="btn">Enroll Now</a>
     </div>
   </div>
 </header>
 
-<section id="about">
+<section id="programme">
   <div class="container">
-    <h2 class="section-title">Why Arise and Shine Tutors?</h2>
-    <div class="features">
-      <div class="feature-box">Mathematics-only focus for Grades 8–12</div>
-      <div class="feature-box">Clear explanations and strong foundations</div>
-      <div class="feature-box">Regular practice with exam-style questions</div>
-      <div class="feature-box">Affordable and structured monthly programme</div>
+    <h2 class="section-title">Our Academic System</h2>
+    <div class="grid">
+      <div class="card">Weekly structured lessons aligned to CAPS</div>
+      <div class="card">Past paper mastery & exam preparation</div>
+      <div class="card">Monthly controlled assessments</div>
+      <div class="card">Performance monitoring & feedback</div>
     </div>
-  </div>
-</section>
-
-<section id="grades" class="grades">
-  <div class="container">
-    <h2 class="section-title">Grades We Support</h2>
-    <ul>
-      <li>Grade 8 Mathematics</li>
-      <li>Grade 9 Mathematics</li>
-      <li>Grade 10 Mathematics</li>
-      <li>Grade 11 Mathematics</li>
-      <li>Grade 12 Mathematics (Exam Preparation)</li>
-    </ul>
   </div>
 </section>
 
 <section id="resources">
   <div class="container">
-    <div class="resources">
-      <h2 class="section-title">Mathematics Resources & Past Papers</h2>
-      <p>
-        Our programme includes structured Mathematics resources designed to strengthen understanding and exam readiness.
-      </p>
-      <div class="features" style="margin-top:40px;">
-        <div class="feature-box">Past Exam Papers (Grades 8–12)</div>
-        <div class="feature-box">Exam-Style Practice Questions</div>
-        <div class="feature-box">Worked Solutions & Explanations</div>
-        <div class="feature-box">Weekly Revision Worksheets</div>
-      </div>
-      <p style="margin-top:35px; text-align:center;">
-        <strong>Note:</strong> Full access to these resources is provided to enrolled learners as part of the Arise and Shine Mathematics Programme.
-      </p>
+    <h2 class="section-title">Academic Resources Portal</h2>
+    <div class="grid">
+      <div class="card">Past Examination Papers</div>
+      <div class="card">Memorandums & Worked Solutions</div>
+      <div class="card">Topic-Based Worksheets</div>
+      <div class="card">Exam-Focused Revision Packs</div>
     </div>
+    <p style="text-align:center; margin-top:40px;">
+      Resource access is granted only to enrolled learners after payment confirmation.
+    </p>
   </div>
 </section>
 
-<section class="fees">
-  <div class="container">
-    <h2>Affordable Programme Fees</h2>
-    <p>From <strong>R350 per month</strong></p>
-    <p>Quality Mathematics support made accessible.</p>
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <div class="container">
-    <h2 class="section-title">Contact & Enrollment</h2>
-    <p><strong>ARISE AND SHINE TUTORS (PTY) LTD</strong></p>
-    <p>📍 Burgersfort</p>
-    <p>📞 071 328 6497 / 081 533 0266</p>
-    <p>📧 aas.tutors@gmail.com</p>
-    <a href="https://wa.me/27713286497" class="btn">WhatsApp Us</a>
-  </div>
+<section id="fees" class="fees">
+  <h2>Programme Fees</h2>
+  <p><strong>Online Classes:</strong> R350 per subject / month</p>
+  <p><strong>Physical Classes (Fri–Sun, Burgersfort):</strong> R400 per subject / month</p>
 </section>
 
 <footer>
+  <p>ARISE & SHINE TUTORS (PTY) LTD</p>
   <p>REG: K2023 790804 | TAX NO: 9117175274</p>
-  <p>&copy; 2026 Arise and Shine Tutors. All rights reserved.</p>
+  <p>Excellence Through Understanding</p>
 </footer>
 
 </body>
 </html>
-
-<!-- ========================= -->
-<!-- ENROLL PAGE (enroll.html) -->
-<!-- ========================= -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enroll | Arise and Shine Tutors</title>
-  <meta name="description" content="Enroll for specialised Mathematics tutoring for Grades 8–12." />
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Memberstack -->
-  <!-- Replace YOUR_MEMBERSTACK_ID with your real Memberstack ID -->
-  <script src="https://api.memberstack.io/static/memberstack.js?custom" data-memberstack-id="YOUR_MEMBERSTACK_ID"></script>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #F9FAFB;
-      color: #1F2933;
-    }
-
-    .container {
-      max-width: 720px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 15px;
-    }
-
-    p.subtitle {
-      text-align: center;
-      margin-bottom: 40px;
-      color: #4B5563;
-    }
-
-    form {
-      background: white;
-      padding: 40px 35px;
-      border-radius: 16px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-    }
-
-    label {
-      display: block;
-      margin-bottom: 6px;
-      font-weight: 600;
-    }
-
-    input, select {
-      width: 100%;
-      padding: 12px 14px;
-      margin-bottom: 22px;
-      border-radius: 8px;
-      border: 1px solid #D1D5DB;
-      font-size: 0.95rem;
-    }
-
-    button {
-      width: 100%;
-      background: #2E8B57;
-      color: white;
-      padding: 14px;
-      border: none;
-      border-radius: 10px;
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    .note {
-      margin-top: 25px;
-      font-size: 0.9rem;
-      color: #6B7280;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="container">
-    <h1>Enroll for Mathematics Tutoring</h1>
-    <p class="subtitle">Grades 8–12 | One Monthly Fee | Full Resource Access</p>
-
-    <!-- MEMBERSTACK SIGNUP FORM -->
-    <form data-ms-form="signup">
-      <label>Parent / Guardian Full Name</label>
-      <input type="text" name="parent_name" required />
-
-      <label>Learner Full Name</label>
-      <input type="text" name="learner_name" required />
-
-      <label>Grade</label>
-      <select name="grade" required>
-        <option value="">Select Grade</option>
-        <option>Grade 8</option>
-        <option>Grade 9</option>
-        <option>Grade 10</option>
-        <option>Grade 11</option>
-        <option>Grade 12</option>
-      </select>
-
-      <label>Email Address</label>
-      <input type="email" name="email" required />
-
-      <label>Phone Number</label>
-      <input type="tel" name="phone" required />
-
-      <!-- Memberstack email + password fields -->
-      <label>Create Password</label>
-      <input type="password" data-ms-member="password" required />
-
-      <button type="submit">Proceed to Payment</button>
-    </form>
-
-    <p class="note">
-      After payment confirmation, learners receive immediate access to Mathematics resources, past papers, and downloads.
-    </p>
-  </div>
-
-</body>
-</html>
-
 

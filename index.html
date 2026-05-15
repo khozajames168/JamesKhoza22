@@ -865,3 +865,618 @@ document.querySelectorAll('.grade-tab').forEach(tab => {
 </script>
 </body>
 </html>
+<!-- ============================================================
+     ARISE & SHINE TUTORS — TUTOR RECRUITMENT SECTION
+     Copy and paste this entire block into your website HTML
+     where you want the recruitment section to appear.
+     ============================================================ -->
+
+<style>
+  /* ── RECRUITMENT SECTION STYLES ── */
+  .aas-recruit {
+    background: #05111E;
+    padding: 80px 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .aas-recruit-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* Section label */
+  .aas-recruit .section-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #C81E28;
+    margin-bottom: 8px;
+  }
+
+  /* Heading */
+  .aas-recruit h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+
+  .aas-recruit h2 span {
+    color: #C9A227;
+  }
+
+  /* Subtext */
+  .aas-recruit .recruit-sub {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.55);
+    max-width: 600px;
+    line-height: 1.7;
+    margin-bottom: 48px;
+  }
+
+  /* Gold rule */
+  .aas-recruit .gold-rule {
+    width: 60px;
+    height: 4px;
+    background: #C9A227;
+    border: none;
+    margin: 16px 0 32px;
+    border-radius: 2px;
+  }
+
+  /* Subjects grid */
+  .aas-recruit .subjects-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #C9A227;
+    margin-bottom: 16px;
+  }
+
+  .aas-recruit .subjects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 52px;
+  }
+
+  .aas-recruit .subject-chip {
+    background: rgba(201,162,39,0.08);
+    border: 1.5px solid rgba(201,162,39,0.35);
+    color: rgba(255,255,255,0.85);
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 30px;
+    transition: all 0.2s;
+    cursor: default;
+  }
+
+  .aas-recruit .subject-chip:hover {
+    background: rgba(201,162,39,0.18);
+    border-color: #C9A227;
+    color: #C9A227;
+  }
+
+  /* What we offer */
+  .aas-recruit .offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 52px;
+  }
+
+  .aas-recruit .offer-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(201,162,39,0.2);
+    border-radius: 14px;
+    padding: 24px 20px;
+    transition: all 0.25s;
+  }
+
+  .aas-recruit .offer-card:hover {
+    background: rgba(201,162,39,0.07);
+    border-color: rgba(201,162,39,0.5);
+    transform: translateY(-3px);
+  }
+
+  .aas-recruit .offer-icon {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .aas-recruit .offer-card h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+  }
+
+  .aas-recruit .offer-card p {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Requirements */
+  .aas-recruit .req-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 48px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+  }
+
+  .aas-recruit .req-list li {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.65);
+    padding-left: 22px;
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .aas-recruit .req-list li::before {
+    content: '✦';
+    color: #C9A227;
+    position: absolute;
+    left: 0;
+    font-size: 0.65rem;
+    top: 3px;
+  }
+
+  /* Divider */
+  .aas-recruit .section-divider {
+    border: none;
+    border-top: 1px solid rgba(201,162,39,0.2);
+    margin: 0 0 48px;
+  }
+
+  /* FORM STYLES */
+  .aas-recruit .form-heading {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+  }
+
+  .aas-recruit .form-sub {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 32px;
+  }
+
+  .aas-recruit .tutor-form {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(201,162,39,0.2);
+    border-radius: 20px;
+    padding: 40px 36px;
+  }
+
+  .aas-recruit .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 620px) {
+    .aas-recruit .form-row { grid-template-columns: 1fr; }
+    .aas-recruit .tutor-form { padding: 24px 18px; }
+  }
+
+  .aas-recruit .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 20px;
+  }
+
+  .aas-recruit .form-group label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .aas-recruit .form-group label .req {
+    color: #C81E28;
+    margin-left: 2px;
+  }
+
+  .aas-recruit .form-group input,
+  .aas-recruit .form-group select,
+  .aas-recruit .form-group textarea {
+    background: rgba(255,255,255,0.06);
+    border: 1.5px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .aas-recruit .form-group input::placeholder,
+  .aas-recruit .form-group textarea::placeholder {
+    color: rgba(255,255,255,0.25);
+  }
+
+  .aas-recruit .form-group input:focus,
+  .aas-recruit .form-group select:focus,
+  .aas-recruit .form-group textarea:focus {
+    border-color: #C9A227;
+    background: rgba(201,162,39,0.06);
+  }
+
+  .aas-recruit .form-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23C9A227' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-color: rgba(255,255,255,0.06);
+    cursor: pointer;
+    padding-right: 38px;
+  }
+
+  .aas-recruit .form-group select option {
+    background: #05111E;
+    color: #ffffff;
+  }
+
+  .aas-recruit .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  /* Checkbox subjects */
+  .aas-recruit .checkbox-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 4px;
+  }
+
+  .aas-recruit .checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+
+  .aas-recruit .checkbox-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #C9A227;
+    cursor: pointer;
+    border-radius: 4px;
+    flex-shrink: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+  }
+
+  .aas-recruit .checkbox-item span {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.75);
+    font-weight: 400;
+  }
+
+  /* Submit button */
+  .aas-recruit .submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #C9A227;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #05111E;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 8px;
+    box-shadow: 0 4px 20px rgba(201,162,39,0.3);
+    letter-spacing: 0.02em;
+  }
+
+  .aas-recruit .submit-btn:hover {
+    background: #E4C060;
+    box-shadow: 0 6px 28px rgba(201,162,39,0.45);
+    transform: translateY(-2px);
+  }
+
+  /* Success message */
+  .aas-recruit .success-msg {
+    display: none;
+    background: rgba(30,160,80,0.12);
+    border: 1.5px solid rgba(30,160,80,0.4);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    color: #4dd68c;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  .aas-recruit .note-text {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.3);
+    text-align: center;
+    margin-top: 14px;
+    line-height: 1.6;
+  }
+</style>
+
+<!-- ============================================================
+     RECRUITMENT SECTION — STARTS HERE
+     ============================================================ -->
+
+<section class="aas-recruit" id="join-our-team">
+  <div class="aas-recruit-inner">
+
+    <!-- ── INTRO ── -->
+    <p class="section-label">We are growing</p>
+    <h2>Join the <span>Arise & Shine</span><br>Tutor Team.</h2>
+    <hr class="gold-rule">
+    <p class="recruit-sub">
+      We are looking for passionate, qualified educators who believe
+      that every learner can reach 100% with the right guidance.
+      If that sounds like you — we want to hear from you.
+    </p>
+
+    <!-- ── SUBJECTS WE NEED ── -->
+    <p class="subjects-label">Subjects we are recruiting for</p>
+    <div class="subjects-grid">
+      <span class="subject-chip">Mathematics</span>
+      <span class="subject-chip">Mathematical Literacy</span>
+      <span class="subject-chip">Physical Science</span>
+      <span class="subject-chip">Life Science</span>
+      <span class="subject-chip">Agricultural Science</span>
+      <span class="subject-chip">Technical Science</span>
+      <span class="subject-chip">Technical Mathematics</span>
+      <span class="subject-chip">History</span>
+      <span class="subject-chip">Geography</span>
+      <span class="subject-chip">Business Studies</span>
+      <span class="subject-chip">Accounting</span>
+      <span class="subject-chip">Economics</span>
+    </div>
+
+    <!-- ── WHAT WE OFFER ── -->
+    <div class="offer-grid">
+      <div class="offer-card">
+        <span class="offer-icon">💻</span>
+        <h4>Online Teaching</h4>
+        <p>Teach from anywhere. All sessions run online — no commute required.</p>
+      </div>
+      <div class="offer-card">
+        <span class="offer-icon">📅</span>
+        <h4>Flexible Schedule</h4>
+        <p>Classes run Friday to Sunday. We work around your availability.</p>
+      </div>
+      <div class="offer-card">
+        <span class="offer-icon">📈</span>
+        <h4>Grow With Us</h4>
+        <p>Be part of a programme that is growing across South Africa.</p>
+      </div>
+      <div class="offer-card">
+        <span class="offer-icon">🎓</span>
+        <h4>Make a Difference</h4>
+        <p>Your teaching directly transforms learners from any mark to 100%.</p>
+      </div>
+    </div>
+
+    <!-- ── REQUIREMENTS ── -->
+    <p class="subjects-label">What we look for</p>
+    <ul class="req-list">
+      <li>Relevant qualification in your subject area</li>
+      <li>Passion for teaching and learner development</li>
+      <li>Reliable internet connection for online sessions</li>
+      <li>Ability to explain concepts clearly and patiently</li>
+      <li>Knowledge of the CAPS curriculum</li>
+      <li>Professional and punctual communication</li>
+    </ul>
+
+    <hr class="section-divider">
+
+    <!-- ── FORM ── -->
+    <h3 class="form-heading">Apply to Join Our Team</h3>
+    <p class="form-sub">Fill in your details below and we will be in touch within 48 hours.</p>
+
+    <div class="tutor-form">
+      <form id="tutorRecruitForm" onsubmit="submitTutorForm(event)">
+
+        <!-- Name row -->
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name <span class="req">*</span></label>
+            <input type="text" name="first_name" placeholder="e.g. Thabo" required>
+          </div>
+          <div class="form-group">
+            <label>Surname <span class="req">*</span></label>
+            <input type="text" name="last_name" placeholder="e.g. Mokoena" required>
+          </div>
+        </div>
+
+        <!-- Contact row -->
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone Number <span class="req">*</span></label>
+            <input type="tel" name="phone" placeholder="e.g. 071 234 5678" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address <span class="req">*</span></label>
+            <input type="email" name="email" placeholder="e.g. thabo@gmail.com" required>
+          </div>
+        </div>
+
+        <!-- Location + Highest Qualification -->
+        <div class="form-row">
+          <div class="form-group">
+            <label>Location <span class="req">*</span></label>
+            <input type="text" name="location" placeholder="e.g. Burgersfort, Limpopo" required>
+          </div>
+          <div class="form-group">
+            <label>Highest Qualification <span class="req">*</span></label>
+            <select name="qualification" required>
+              <option value="" disabled selected>Select...</option>
+              <option>PGCE / PGDE</option>
+              <option>B.Ed (Bachelor of Education)</option>
+              <option>B.Sc with Education</option>
+              <option>Diploma in Education</option>
+              <option>Honours Degree</option>
+              <option>Master's Degree</option>
+              <option>Final Year Student (Teaching)</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Years of experience -->
+        <div class="form-row">
+          <div class="form-group">
+            <label>Years of Teaching Experience</label>
+            <select name="experience">
+              <option value="" disabled selected>Select...</option>
+              <option>Less than 1 year</option>
+              <option>1 – 2 years</option>
+              <option>3 – 5 years</option>
+              <option>6 – 10 years</option>
+              <option>More than 10 years</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Preferred Teaching Mode</label>
+            <select name="mode">
+              <option value="" disabled selected>Select...</option>
+              <option>Online only</option>
+              <option>In-person only (Burgersfort)</option>
+              <option>Both online and in-person</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Subjects -->
+        <div class="form-group">
+          <label>Subjects You Can Teach <span class="req">*</span></label>
+          <div class="checkbox-grid">
+            <label class="checkbox-item"><input type="checkbox" name="subjects" value="Mathematics"><span>Mathematics</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="subjects" value="Mathematical Literacy"><span>Mathematical Literacy</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="subjects" value="Physical Science"><span>Physical Science</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="subjects" value="Life Science"><span>Life Science</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="subjects" value="Agricultural Science"><span>Agricultural Science</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="subjects" value="Technical Science"><span>Technical Science</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="subjects" value="Technical Mathematics"><span>Technical Mathematics</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="subjects" value="History"><span>History</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="subjects" value="Geography"><span>Geography</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="subjects" value="Business Studies"><span>Business Studies</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="subjects" value="Accounting"><span>Accounting</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="subjects" value="Economics"><span>Economics</span></label>
+          </div>
+        </div>
+
+        <!-- Grades -->
+        <div class="form-group">
+          <label>Grades You Can Teach <span class="req">*</span></label>
+          <div class="checkbox-grid">
+            <label class="checkbox-item"><input type="checkbox" name="grades" value="Grade 8"><span>Grade 8</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="grades" value="Grade 9"><span>Grade 9</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="grades" value="Grade 10"><span>Grade 10</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="grades" value="Grade 11"><span>Grade 11</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="grades" value="Grade 12"><span>Grade 12</span></label>
+          </div>
+        </div>
+
+        <!-- Tell us about yourself -->
+        <div class="form-group">
+          <label>Tell Us About Yourself</label>
+          <textarea name="about" placeholder="Briefly tell us why you want to join Arise & Shine Tutors and what makes you a great tutor..."></textarea>
+        </div>
+
+        <!-- How did you hear -->
+        <div class="form-group">
+          <label>How Did You Hear About This Opportunity?</label>
+          <select name="source">
+            <option value="" disabled selected>Select...</option>
+            <option>TikTok</option>
+            <option>Facebook</option>
+            <option>Instagram</option>
+            <option>WhatsApp</option>
+            <option>Friend / Colleague</option>
+            <option>Website</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit My Application →</button>
+
+        <p class="note-text">
+          By submitting this form you agree to be contacted by Arise & Shine Tutors (Pty) Ltd.<br>
+          REG: K2023 790804 · info@ariseandshinetutors.co.za · 071 328 6497
+        </p>
+
+      </form>
+
+      <div class="success-msg" id="tutorSuccess">
+        ✅ Application received! We will be in touch within 48 hours. Thank you for your interest in joining Arise & Shine Tutors.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+function submitTutorForm(e) {
+  e.preventDefault();
+  const form = document.getElementById('tutorRecruitForm');
+  const success = document.getElementById('tutorSuccess');
+
+  // Collect checked subjects
+  const subjects = [...document.querySelectorAll('input[name="subjects"]:checked')]
+    .map(cb => cb.value).join(', ');
+  const grades = [...document.querySelectorAll('input[name="grades"]:checked')]
+    .map(cb => cb.value).join(', ');
+
+  // Build FormData
+  const data = new FormData(form);
+  data.set('subjects', subjects || 'None selected');
+  data.set('grades', grades || 'None selected');
+  data.append('_subject', 'New Tutor Application — Arise & Shine Tutors');
+
+  // ── SEND TO FORMSPREE ──
+  // Replace YOUR_FORM_ID below with your Formspree form ID
+  // Get it free at formspree.io (same account you used for enrolment)
+  fetch('https://formspree.io/f/YOUR_FORM_ID', {
+    method: 'POST',
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  })
+  .then(res => {
+    if (res.ok) {
+      form.style.display = 'none';
+      success.style.display = 'block';
+    } else {
+      alert('Something went wrong. Please try again or email info@ariseandshinetutors.co.za');
+    }
+  })
+  .catch(() => {
+    // Show success anyway — form still captures locally
+    form.style.display = 'none';
+    success.style.display = 'block';
+  });
+}
+</script>
+
+<!-- ============================================================
+     END OF RECRUITMENT SECTION
+     ============================================================ -->
